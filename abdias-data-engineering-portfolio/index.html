@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abdias Peguero — Lead Data Engineer portfolio." />
+  <meta name="theme-color" content="#07111f" />
+  <title>Abdias Peguero | Lead Data Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/script.js"></script>
+</head>
+<body>
+  <div class="background-grid" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Home">AP<span>.</span></a>
+    <button class="menu-button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a class="nav-cta" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-content reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Open to global opportunities</p>
+        <h1>Building scalable data platforms that turn complexity into <span>business value.</span></h1>
+        <p class="hero-copy">
+          Lead Data Engineer specializing in Databricks, Spark, Azure, Airflow, Python and SQL.
+          I design reliable data products, automate critical processes and improve operational intelligence.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View projects</a>
+          <a class="button secondary" href="#contact">Contact me</a>
+        </div>
+        <div class="hero-metrics">
+          <div><strong>5+</strong><span>Years in data</span></div>
+          <div><strong>98%</strong><span>Process-time reduction</span></div>
+          <div><strong>Multi-country</strong><span>Business impact</span></div>
+        </div>
+      </div>
+
+      <div class="architecture-card reveal" aria-label="Modern data architecture diagram">
+        <div class="terminal-header">
+          <span></span><span></span><span></span>
+          <small>data_platform.py</small>
+        </div>
+        <pre><code><span class="code-muted"># From raw data to trusted decisions</span>
+
+<span class="code-purple">sources</span> = [<span class="code-green">"SAP"</span>, <span class="code-green">"APIs"</span>, <span class="code-green">"Files"</span>]
+
+<span class="code-blue">pipeline</span> = (
+  ingest(sources)
+  .to(<span class="code-green">"bronze"</span>)
+  .validate()
+  .transform(<span class="code-green">"silver"</span>)
+  .model(<span class="code-green">"gold"</span>)
+  .serve(<span class="code-green">"analytics"</span>)
+)
+
+<span class="code-purple">pipeline</span>.monitor()
+<span class="code-purple">pipeline</span>.optimize_costs()</code></pre>
+        <div class="pipeline">
+          <span>Sources</span><i>→</i><span>Bronze</span><i>→</i><span>Silver</span><i>→</i><span>Gold</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section split-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">About me</p>
+        <h2>Engineering data systems with business context.</h2>
+      </div>
+      <div class="about-copy reveal">
+        <p>
+          I am a Data Engineer with more than five years of experience designing, developing and
+          optimizing enterprise data solutions. My work combines strong technical execution with
+          a practical understanding of finance, taxes, supply chain, procurement and DataOps.
+        </p>
+        <p>
+          I enjoy turning fragmented manual processes into scalable, auditable and observable
+          data products that help teams make faster and better decisions.
+        </p>
+      </div>
+    </section>
+
+    <section id="expertise" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Technical expertise</p>
+        <h2>A modern stack for dependable data products.</h2>
+      </div>
+      <div class="cards four-columns">
+        <article class="glass-card reveal">
+          <span class="card-icon">01</span>
+          <h3>Data Engineering</h3>
+          <p>Databricks, Spark, PySpark, Delta Lake, Unity Catalog, SQL, Python and Pandas.</p>
+        </article>
+        <article class="glass-card reveal">
+          <span class="card-icon">02</span>
+          <h3>Cloud Architecture</h3>
+          <p>Microsoft Azure, ADLS Gen2, ADF, AWS, Snowflake and Lakehouse architectures.</p>
+        </article>
+        <article class="glass-card reveal">
+          <span class="card-icon">03</span>
+          <h3>DataOps & DevOps</h3>
+          <p>Airflow, GitHub, CI/CD, Terraform, monitoring, data quality and cost governance.</p>
+        </article>
+        <article class="glass-card reveal">
+          <span class="card-icon">04</span>
+          <h3>Business Data</h3>
+          <p>SAP ECC/S4HANA, Power BI, financial, tax, procurement and supply-chain data.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Featured projects</p>
+        <h2>Selected work and measurable outcomes.</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card featured reveal">
+          <div>
+            <p class="project-number">01 / Operational Intelligence</p>
+            <h3>Brewdat Cost Governance</h3>
+            <p>
+              Architecture connecting workflow execution metadata with cloud financial data to expose
+              failure cost, expensive pipelines, domain spend, MTTR and infrastructure efficiency.
+            </p>
+          </div>
+          <ul class="tags"><li>Databricks</li><li>PySpark</li><li>Power BI</li><li>DataOps</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <p class="project-number">02 / Tax</p>
+          <h3>Automated Tax Reporting</h3>
+          <p>Modernized SAP tax reporting with auditable pipelines and automated validation rules.</p>
+          <strong class="impact">5–7 days → 45 minutes</strong>
+          <ul class="tags"><li>SAP</li><li>ADF</li><li>SQL</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <p class="project-number">03 / Supply Chain</p>
+          <h3>Importation Data Product</h3>
+          <p>Unified importations, POs, purchase requests, materials, vendors, expenses and logistics milestones.</p>
+          <ul class="tags"><li>Lakehouse</li><li>Data Quality</li><li>Power BI</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <p class="project-number">04 / Finance</p>
+          <h3>Retention Letter Automation</h3>
+          <p>Automated generation and validation of payment-retention information using financial and vendor data.</p>
+          <strong class="impact">3–5 days → 15 minutes</strong>
+          <ul class="tags"><li>SAP FI</li><li>Python</li><li>SQL</li></ul>
+        </article>
+
+        <article class="project-card reveal">
+          <p class="project-number">05 / Revenue</p>
+          <h3>Price & Tax List Automation</h3>
+          <p>Automated product pricing and tax outputs with reusable business rules and standardized datasets.</p>
+          <strong class="impact">1–3 days → 10 minutes</strong>
+          <ul class="tags"><li>Pricing</li><li>Databricks</li><li>Automation</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Experience</p>
+        <h2>Professional journey.</h2>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <span>2022 — Present</span>
+          <div><h3>Lead Data Engineer · AB InBev</h3><p>Enterprise data products, architecture, automation, technical leadership, DataOps and cost governance across multiple countries.</p></div>
+        </article>
+        <article class="timeline-item reveal">
+          <span>Previous</span>
+          <div><h3>Senior Data Engineer · Nestlé</h3><p>Enterprise pipelines, scalable data solutions, analytics enablement and processing optimization.</p></div>
+        </article>
+        <article class="timeline-item reveal">
+          <span>Previous</span>
+          <div><h3>Data Engineer · AJFA BIC S.A.S</h3><p>Data transformations, SQL and Python solutions, reporting and business intelligence.</p></div>
+        </article>
+        <article class="timeline-item reveal">
+          <span>First role</span>
+          <div><h3>Data Engineer · Evopoint Solutions</h3><p>Data pipelines, analytical datasets, database design and process automation.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section reveal">
+      <p class="eyebrow">Let’s connect</p>
+      <h2>Let’s build better data products.</h2>
+      <p>I am open to remote roles, international collaborations and challenging Data Engineering projects.</p>
+      <div class="hero-actions">
+        <!-- Replace these placeholder links before publishing -->
+        <a class="button primary" href="mailto:your-email@example.com">Email me</a>
+        <a class="button secondary" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="button secondary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Abdias Peguero. Built with data, engineering and continuous improvement.</p>
+  </footer>
+</body>
+</html>
